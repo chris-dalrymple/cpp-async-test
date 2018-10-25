@@ -1,0 +1,27 @@
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>  
+    <ProjectConfiguration Include="Debug|x64">  
+      <Configuration>Debug</Configuration>  
+      <Platform>Win32</Platform>  
+    </ProjectConfiguration>  
+    <ProjectConfiguration Include="Release|x64">  
+      <Configuration>Release</Configuration>  
+      <Platform>Win32</Platform>  
+    </ProjectConfiguration>  
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.default.props" />
+  <PropertyGroup>  
+    <ConfigurationType>Application</ConfigurationType>  
+    <PlatformToolset>v140</PlatformToolset>  
+  </PropertyGroup>  
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ItemGroup>  
+    <ClCompile Include="App.cpp" />
+    <ClCompile Include="system\connection.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="system\connection.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Targets" />
+</Project>  
+
